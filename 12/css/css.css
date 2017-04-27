@@ -28,6 +28,7 @@ body{
 	border-left: 1px solid rgba(0,0,0,.4);
 	text-align: left;
 	text-indent: 20px;
+	position: relative;
 }
 .menu ul li a:hover{
 	color: #fff;
@@ -48,10 +49,17 @@ body{
 }
 .menu ul li a::after{
 	content: "";
-	position: absolute;
-	left: 10%;
-	right: 10%;
 	top: 10%;
 	bottom: 0;
-	border-radius:100%;
+	left: 10%;
+	right: 10%;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+	z-index: -1;
+	transition: all .5s;
+}
+.menu ul li a:hover::after{
+	border-radius: 50%;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,.6);
 }
