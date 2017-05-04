@@ -79,10 +79,10 @@
 .imgList figure figcaption p{
 	color: #fff;
 	text-align: center;
-	z-index: 5;
 }
 .imgList figure figcaption h3{
 	font-size: 1.4em;
+	z-index: 5;
 }
 .imgList figure figcaption p{
 	position: relative;
