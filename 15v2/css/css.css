@@ -1,0 +1,61 @@
+*{
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+body{
+	background: url(../img/bj.jpeg) center top fixed;
+	min-height: 1200px;
+	font-family: "微软雅黑";
+}
+.wrapper{
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+header{
+	margin: 30px 0;
+	position: relative;
+}
+.logo img{
+	width: 100px;
+	height: auto;
+}
+nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+nav ul li{
+	float: left;
+	margin: 20px 30px;
+}
+nav ul li a{
+	padding: 20px;
+	border: 1px solid transparent;
+	transition: color .5s,border .5s;
+}
+nav ul li a:hover{
+	color: #000;
+	border: 1px solid #fff;
+}
+header h2{
+	margin: 50px 0;
+	font-size: 30px;
+	color: #fff;
+}
+p{
+	color: black
+	text-indent:1.5em;
+}
